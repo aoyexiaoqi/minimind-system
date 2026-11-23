@@ -1,0 +1,12 @@
+{
+  "current": null,
+  "previous": null,
+  "versions": [
+    {
+      "version": "20261123-pretrain-run01",
+      "status": "planned",
+      "base": "InstaBox Phase B checkpoint (600 steps, loss 5.1380)",
+      "code_head": "3d85c71e5cd86b8622107eb1f5745bdb4cc5590a"
+    }
+  ]
+}

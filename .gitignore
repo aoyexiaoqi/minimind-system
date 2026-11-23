@@ -1,0 +1,14 @@
+# 凭据与令牌，绝不入库
+registry/secrets.env
+*.env
+# 模型权重与检查点（走 Drive / InstaBox，不进 Git）
+*.safetensors
+*.pt
+*.pth
+*.bin
+checkpoints/
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/

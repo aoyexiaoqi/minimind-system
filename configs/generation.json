@@ -1,0 +1,16 @@
+{
+  "max_input_tokens": 384,
+  "max_total_window": 512,
+  "default_max_new_tokens": 128,
+  "max_new_tokens_cap": 256,
+  "business_defaults": {
+    "temperature": 0.7,
+    "top_p": 0.85,
+    "repetition_penalty": 1.1
+  },
+  "eval_decoding": "greedy",
+  "torch_threads": 2,
+  "torch_interop_threads": 1,
+  "queue_max_waiting": 5,
+  "queue_timeout_sec": 15
+}
