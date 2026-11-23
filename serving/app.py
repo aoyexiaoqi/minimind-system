@@ -104,18 +104,19 @@ def _generate_sync(req: GenerateRequest) -> dict:
     if max_new < 1:
         raise HTTPException(status_code=400, detail="input too long")
     input_ids = torch.tensor([ids], dtype=torch.long)
+    gen_kwargs = dict(
+        max_new_tokens=max_new,
+        do_sample=not req.greedy,
+        repetition_penalty=req.repetition_penalty,
+        eos_token_id=tokenizer.eos_token_id,
+        pad_token_id=tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
+    )
+    if not req.greedy:
+        gen_kwargs["temperature"] = req.temperature
+        gen_kwargs["top_p"] = req.top_p
     t0 = time.time()
     with torch.inference_mode():
-        out = model.generate(
-            input_ids,
-            max_new_tokens=max_new,
-            do_sample=not req.greedy,
-            temperature=None if req.greedy else req.temperature,
-            top_p=None if req.greedy else req.top_p,
-            repetition_penalty=req.repetition_penalty,
-            eos_token_id=tokenizer.eos_token_id,
-            pad_token_id=tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
-        )
+        out = model.generate(input_ids, **gen_kwargs)
     elapsed = time.time() - t0
     new_ids = out[0][len(ids):].tolist()
     text = tokenizer.decode(new_ids, skip_special_tokens=True)
