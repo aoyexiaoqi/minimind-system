@@ -50,15 +50,20 @@ def main():
         sys.exit(1)
     tensors = {k: v for k, v in state_dict.items() if hasattr(v, "numel")}
     raw_params = sum(v.numel() for v in tensors.values())
-    # 权重绑定（embed_tokens 与 lm_head 共享同一张量）时 state_dict 里会有
-    # 两个键指向同一块存储，按原始求和会重复计一遍词表矩阵（6400x768≈4.92M）。
-    # 参数量校验按唯一存储计数；同时打印共享存储的键对，便于人工核对。
+    # 权重绑定的模型（tie_word_embeddings=True）保存检查点时，embed_tokens 与
+    # lm_head 会以两份独立存储、数值完全相同的张量出现（实测 2026-11-23：
+    # 模型自身 90 个命名参数/63.91M，检查点 91 个张量/68.83M，strict load 全过，
+    # 两矩阵 torch.equal=True）。按原始求和会重复计一遍词表矩阵（6400x768≈4.92M）。
+    # 参数量校验按「内容完全相同的张量只计一次」计数，并打印重复键对供核对。
     seen = {}
     unique_params = 0
     shared_pairs = []
     for k, v in tensors.items():
-        sig = (v.data_ptr(), tuple(v.shape), str(v.dtype))
-        if sig in seen and v.numel() > 0:
+        if v.numel() == 0:
+            continue
+        digest = hashlib.sha256(v.contiguous().numpy().tobytes()).hexdigest()
+        sig = (tuple(v.shape), str(v.dtype), digest)
+        if sig in seen:
             shared_pairs.append((seen[sig], k))
         else:
             seen[sig] = k
@@ -66,7 +71,7 @@ def main():
     print(f"checkpoint tensors: {len(state_dict)}, raw params: {raw_params/1e6:.2f} M, "
           f"unique params: {unique_params/1e6:.2f} M")
     for a, b in shared_pairs:
-        print(f"shared storage: {a} == {b}")
+        print(f"identical tensor content: {a} == {b}")
     n_params = unique_params
     if not (60e6 < n_params < 68e6):
         print("FAIL: unique param count not in expected 64M range (60-68M)")
