@@ -1,0 +1,26 @@
+{
+ "total_stream_tokens_incl_pad": 250746880,
+ "real_tokens": 250746451,
+ "tail_pad_tokens": 429,
+ "tail_pad_all_zero": true,
+ "vocab_size": 6400,
+ "max_token_id": 6399,
+ "illegal_token_ids_ge_vocab": 0,
+ "count_id0_in_real_stream": 0,
+ "count_eos_id2_in_real_stream": 1017472,
+ "kept_docs_manifest": 1017472,
+ "eos_minus_kept": 0,
+ "trailing_tokens_after_last_eos": 0,
+ "doc_body_len_tokens": {
+  "n_segments": 1017472,
+  "p10": 69.0,
+  "p50": 194.0,
+  "p90": 389.0,
+  "mean": 245.44064013555163,
+  "min": 2,
+  "max": 11800,
+  "zero_len_segments": 0
+ },
+ "eos_per_million_tokens_appended_sep": 4057.77228727357,
+ "eos_per_million_tokens_all_id2": 4057.77228727357
+}

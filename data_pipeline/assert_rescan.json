@@ -1,0 +1,30 @@
+{
+ "rescan_stats": {
+  "lines_read": 1270238,
+  "invalid_json": 0,
+  "empty_text": 0,
+  "too_short": 38,
+  "dup_dropped": 254,
+  "decontam_dropped": 252474,
+  "kept": 1017472
+ },
+ "manifest_stats_subset": {
+  "lines_read": 1270238,
+  "invalid_json": 0,
+  "empty_text": 0,
+  "too_short": 38,
+  "dup_dropped": 254,
+  "decontam_dropped": 252474,
+  "kept": 1017472
+ },
+ "counts_match_manifest": true,
+ "kept_docs_13gram_collisions_with_refs": 0,
+ "kept_docs_short_prompt_substring_hits": 0,
+ "kept_docs_containing_literal_im_end_string": 0,
+ "doc_len_chars": {
+  "p10": 94,
+  "p50": 257,
+  "p90": 490,
+  "mean": 328.12193750786264
+ }
+}

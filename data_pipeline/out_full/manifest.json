@@ -1,0 +1,631 @@
+{
+  "corpus": "/home/hatch/workspace/.jarvis/idea-executions/ef7a9525-5652-4f6a-a3f0-5049329c8872/scratch/minimind/dataset/pretrain_t2t_mini.jsonl",
+  "limit": null,
+  "refs_dir": "refs",
+  "tokenizer": "/home/hatch/workspace/minimind-release/run01/tokenizer.json",
+  "tokenizer_sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+  "separator": {
+    "choice": "eos",
+    "token": "<|im_end|>",
+    "id": 2,
+    "note": "默认 eos(<|im_end|>,id2)=模型训练停止符；<|endoftext|>(id0) 在本分词器中为 pad/unk"
+  },
+  "block_size": 512,
+  "dtype": "uint16",
+  "stats": {
+    "lines_read": 1270238,
+    "invalid_json": 0,
+    "empty_text": 0,
+    "ctrl_chars_removed": 4701,
+    "too_short": 38,
+    "dup_dropped": 254,
+    "decontam_dropped": 252474,
+    "kept": 1017472,
+    "kept_tokens": 250746451
+  },
+  "tail_pad_tokens": 429,
+  "chunks": [
+    {
+      "file": "chunk-0000.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0001.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0002.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0003.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0004.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0005.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0006.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0007.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0008.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0009.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0010.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0011.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0012.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0013.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0014.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0015.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0016.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0017.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0018.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0019.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0020.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0021.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0022.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0023.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0024.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0025.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0026.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0027.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0028.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0029.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0030.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0031.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0032.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0033.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0034.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0035.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0036.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0037.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0038.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0039.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0040.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0041.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0042.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0043.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0044.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0045.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0046.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0047.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0048.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0049.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0050.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0051.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0052.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0053.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0054.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0055.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0056.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0057.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0058.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0059.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0060.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0061.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0062.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0063.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0064.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0065.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0066.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0067.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0068.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0069.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0070.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0071.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0072.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0073.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0074.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0075.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0076.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0077.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0078.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0079.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0080.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0081.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0082.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0083.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0084.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0085.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0086.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0087.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0088.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0089.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0090.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0091.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0092.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0093.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0094.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0095.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0096.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0097.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0098.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0099.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0100.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0101.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0102.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0103.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0104.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0105.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0106.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0107.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0108.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0109.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0110.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0111.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0112.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0113.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0114.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0115.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0116.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0117.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0118.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0119.bin",
+      "blocks": 2316,
+      "tokens": 1185792
+    }
+  ],
+  "total_blocks": 489740,
+  "elapsed_sec": 979.1
+}

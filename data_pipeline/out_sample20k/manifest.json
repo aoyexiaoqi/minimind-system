@@ -1,0 +1,41 @@
+{
+  "corpus": "/home/hatch/workspace/.jarvis/idea-executions/ef7a9525-5652-4f6a-a3f0-5049329c8872/scratch/minimind/dataset/pretrain_t2t_mini.jsonl",
+  "limit": 20000,
+  "refs_dir": "/home/hatch/workspace/minimind-system/data_pipeline/refs",
+  "tokenizer": "/home/hatch/workspace/minimind-release/run01/tokenizer.json",
+  "tokenizer_sha256": "71f32c68cf63a15355a8fc171b7594b3d41870fe0ddb54fc6aefa55f73a4a668",
+  "separator": {
+    "choice": "eos",
+    "token": "<|im_end|>",
+    "id": 2,
+    "note": "默认 eos(<|im_end|>,id2)=模型训练停止符；<|endoftext|>(id0) 在本分词器中为 pad/unk"
+  },
+  "block_size": 512,
+  "dtype": "uint16",
+  "stats": {
+    "lines_read": 20000,
+    "invalid_json": 0,
+    "empty_text": 0,
+    "ctrl_chars_removed": 1,
+    "too_short": 0,
+    "dup_dropped": 0,
+    "decontam_dropped": 1618,
+    "kept": 18382,
+    "kept_tokens": 3758508
+  },
+  "tail_pad_tokens": 84,
+  "chunks": [
+    {
+      "file": "chunk-0000.bin",
+      "blocks": 4096,
+      "tokens": 2097152
+    },
+    {
+      "file": "chunk-0001.bin",
+      "blocks": 3245,
+      "tokens": 1661440
+    }
+  ],
+  "total_blocks": 7341,
+  "elapsed_sec": 101.7
+}
