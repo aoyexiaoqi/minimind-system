@@ -1,6 +1,6 @@
 {
- "current": "20261123-pretrain-run01",
- "previous": "20261124-qwen-run01",
+ "current": "20261128-sprint1-step1200",
+ "previous": "20261123-pretrain-run01",
  "versions": [
   {
    "auth": "Bearer token, generated on InstaBox, stored only in /data/home/minimind-system/secrets.env (600) on that machine",
@@ -9,11 +9,12 @@
    "deployed_at": "2026-11-23T16:12:00+08:00",
    "endpoint": "https://8080-agq536nd3c3yx3lgu6owgvns7q.instabox.tech",
    "param_count_unique": 63912192,
-   "role": "现任线上版本（2026-11-24 Jimmy 指示切回；minimind 自训线主线）",
+   "redeployed_at": "2026-11-24T09:00:00+08:00",
+   "role": "回滚版本（previous；2026-11-28 step_1200 上线后转回滚位，权重与版本目录完整保留）",
    "safetensors_sha256": "2efb5c8d3b048bacfa42c6ff0ed021d9a3f3bf4efc2671dd86c7e5faf3cf3ed9",
-   "status": "deployed",
-   "version": "20261123-pretrain-run01",
-   "redeployed_at": "2026-11-24T09:00:00+08:00"
+   "status": "standby",
+   "superseded_at": "2026-11-28T09:34:00+08:00",
+   "version": "20261123-pretrain-run01"
   },
   {
    "auth": "Bearer token, unchanged, stored only in /data/home/minimind-system/secrets.env (600) on InstaBox",
@@ -40,6 +41,27 @@
    "source_format": "safetensors (official; Qwen 未发布 Base 版 GGUF 仓库)",
    "status": "standby",
    "version": "20261124-qwen-run01"
+  },
+  {
+   "auth": "Bearer <redacted>, unchanged, stored only in /data/home/minimind-system/secrets.env (600) on InstaBox",
+   "base": "Sprint 1 resume checkpoint step_1200 (Kaggle baton step_900 -> 1200, trunk 960 + anneal 240 complete)",
+   "code_head": "3d85c71e5cd86b8622107eb1f5745bdb4cc5590a",
+   "deployed_at": "2026-11-28T09:34:00+08:00",
+   "endpoint": "https://8080-agq536nd3c3yx3lgu6owgvns7q.instabox.tech",
+   "github_release": "https://github.com/aoyexiaoqi/minimind-system/releases/tag/20261128-sprint1-step1200",
+   "measured": {
+    "acceptance": "on-box: sha256 matched, current symlink flipped, service restarted (pid 591347), health/live ok, health/ready + /v1/models report new version, no-token POST 401, token POST 200 with generation; public-side recheck from VM: live ok, ready/models new version, no-token POST 401",
+    "offline_validate": "validate_package PASS locally before upload (strict load, 63.91M params, non-empty greedy sample)"
+   },
+   "param_count_unique": 63912192,
+   "previous": "20261123-pretrain-run01",
+   "role": "现任线上版本（Sprint 1 正式发布，C01 已由 Jimmy 于 2026-11-27 批准、2026-11-28 确认执行）",
+   "safetensors_sha256": "3acdbbf0cf12d778fbbff34ac4dda5588e3d3c4818f5158da9cd6b51b62b9e35",
+   "safetensors_size_bytes": 137664768,
+   "status": "deployed",
+   "train_final_loss": 2.7051,
+   "val_loss_fixed512_v21": 3.1623,
+   "version": "20261128-sprint1-step1200"
   }
  ]
 }

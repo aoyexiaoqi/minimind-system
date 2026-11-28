@@ -61,7 +61,9 @@ def main():
     for k, v in tensors.items():
         if v.numel() == 0:
             continue
-        digest = hashlib.sha256(v.contiguous().numpy().tobytes()).hexdigest()
+        # bf16 张量不能直接 .numpy()（numpy 无 bf16）：按原始字节算摘要，
+        # 与原先 fp32 检查点的摘要口径同为「内容完全相同才同摘要」。
+        digest = hashlib.sha256(v.contiguous().view(torch.uint8).numpy().tobytes()).hexdigest()
         sig = (tuple(v.shape), str(v.dtype), digest)
         if sig in seen:
             shared_pairs.append((seen[sig], k))
